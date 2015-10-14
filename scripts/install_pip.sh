@@ -24,7 +24,7 @@ echo "export PATH=$PATH:$HOME/.local/bin" >> ~/.bashrc
 
 source ~/.bashrc
 
-pip install --user pexpect
+pip install --user pexpect==3.3
 
 pip install --user requests
 
