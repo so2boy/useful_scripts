@@ -6,6 +6,9 @@ TMP_DIR=`mktemp -d /tmp/install_pip.XXXXX`
 
 cd $TMP_DIR
 
+#export http_proxy=http://10.99.84.85:53128
+#export https_proxy=http://10.99.84.85:53128
+
 wget https://bootstrap.pypa.io/ez_setup.py -O - --no-check-certificate | python - --user
 
 wget https://pypi.python.org/packages/source/p/pip/pip-7.1.0.tar.gz#md5=d935ee9146074b1d3f26c5f0acfd120e --no-check-certificate
