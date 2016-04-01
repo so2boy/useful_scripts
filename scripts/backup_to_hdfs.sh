@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# backup conf and scripts to hdfs
+# 4 5 * * * cd /home/serving/bin && sh ./backup_to_hdfs.sh /serving/reco_news >> /home/serving/bin/backup_to_hdfs.log 2>&1 
+
 if [ "$1" == "" ]; then
     echo "Usage: $0 <backup_dir>"
     exit 1
