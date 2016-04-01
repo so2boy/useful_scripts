@@ -9,8 +9,9 @@ cd $1
 
 HOSTNAME=`hostname`
 IP=`host $HOSTNAME | awk '{print $4}'`
-HDFS="/serving/hadoop/hadoop-2.6.0/bin/hdfs dfs"
+export JAVA_HOME="/usr/jdk_home/"
 export HADOOP_USER_NAME=yumeng
+HDFS="/serving/hadoop/hadoop-2.6.0/bin/hdfs dfs"
 
 TAR_NAME=$IP`pwd | sed 's/\//_/g'`".tgz"
 
